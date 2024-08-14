@@ -1,0 +1,67 @@
+
+
+/* src/components/LEDBoard.css */
+
+/* .led-board-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  .led-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2; /* Ensure the board is above the overlay 
+  }
+  
+  .led-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5; /* Adjust the opacity for better visibility 
+    mix-blend-mode: screen; /* Try other blend modes like 'multiply' or 'overlay' if needed 
+    pointer-events: none; /* Ensure the image doesn't block interactions with the LED board 
+    z-index: 1;
+  } */
+
+  
+  /* src/components/LEDBoard.css */
+
+/* src/components/LEDBoard.css */
+
+.led-board-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  .led-board {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 20px); /* Set row height based on LED size */
+    grid-template-columns: repeat(auto-fill, 20px); /* Set column width based on LED size */
+    gap: 2px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2; /* Ensure the board is above the overlay */
+    display: inline;
+  }
+  
+  .led-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Stretch the image to cover the entire grid */
+    opacity: 0.5; /* Adjust the opacity for better visibility */
+    mix-blend-mode: screen; /* Try other blend modes like 'multiply' or 'overlay' if needed */
+    pointer-events: none; /* Ensure the image doesn't block interactions with the LED board */
+    z-index: 1;
+  }
+  
